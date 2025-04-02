@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    background-image: url("../images/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+.navbar{
+    background-color: white;
+}
+.navbar-brand {
+    font-size: 3rem !important;
+    color: rgb(129, 196, 8) !important;
+}
+.btn{
+    color: rgb(129, 196, 8) !important;
+
+}
+
+.btn:hover{
+    color: white !important;
+}
