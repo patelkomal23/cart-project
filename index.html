@@ -16,7 +16,7 @@
 
     <!---------------------------- Header ------------------------------------>
 
-    <header class="navbar navbar-expand-lg py-2 bg-light shadow-sm">
+    <header class="navbar navbar-expand-lg py-2 bg-light shadow-sm ">
         <div class="container">
             <a href="#" class="navbar-brand text-dark fw-bold fs-4">Fruitables</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -24,38 +24,53 @@
             </button>
             <nav class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav mx-auto d-flex justify-content-center align-items-lg-center">
-                    <li class="nav-item mx-lg-2">
-                        <a href="#" class="nav-link text-dark fw-semibold fs-5">Home</a>
+                    <li class="nav-item mx-lg-2 active">
+                        <a href="#" class="nav-link fw-semibold fs-5 homee">Home</a>
                     </li>
                     <li class="nav-item mx-lg-2">
-                        <a href="#" class="nav-link text-dark fw-semibold fs-5">Shop</a>
+                        <a href="#" class="nav-link fw-semibold fs-5 clr">Shop</a>
                     </li>
                     <li class="nav-item mx-lg-2">
-                        <a href="#" class="nav-link text-dark fw-semibold fs-5">Shop Detail</a>
+                        <a href="#" class="nav-link fw-semibold fs-5 clr">Shop Detail</a>
                     </li>
                     <li class="nav-item me-lg-4">
-                        <a href="#" class="nav-link text-dark fw-semibold fs-5">Contacts</a>
+                        <a href="#" class="nav-link fw-semibold fs-5 clr">Contacts</a>
                     </li>
-                    <div class="d-flex flex-row gap-3 ms-auto justify-content-end">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-dark fw-semibold fs-5"><i
-                                    class="bi bi-search-heart"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-dark fw-semibold fs-5"> <i
-                                    class="bi bi-bag-heart-fill fs-5" id="cartIcon"
-                                    style="color:rgb(129, 196, 8) ;"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-dark fw-semibold fs-5"><i
-                                    class="bi bi-person-circle"></i></a>
-                        </li>
+                    <div class="d-flex flex-row gap-3 ms-auto justify-content-end text-end">
+                        <button class="btn"><i class="bi bi-search fs-4"></i></button>
+                        <button class="btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
+                                class="bi bi-bag-fill fs-4" style="color:rgb(129, 196, 8) ;"></i></button>
+                        <button class="btn"><i class="bi bi-person-fill fs-4"></i></button>
                     </div>
 
                 </ul>
             </nav>
         </div>
     </header>
+    <!-- oofcanvas -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title  fw-bold fs-4 ms-auto" id="offcanvas"  style="color:rgb(129, 196, 8) ;"><i class="bi bi-cart4"></i> Your Cart
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <table class="table table  mt-3 text-center">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Qty</th>
+                        <th>price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cartTable"></tbody>
+            </table>
+
+        </div>
+    </div>
     <!-- home -->
     <div class="container-fluid py-5 mb-5 home">
         <div class="container py-5">
@@ -105,10 +120,10 @@
         <div class="row mt-5">
             <div class="col-md-12">
                 <div class="cards" id="card">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="row row-cols-1 row-cols-md-4 g-4">
                         <!-- 1 -->
                         <div class="col">
-                            <div class="card">
+                            <div class="card border border-danger-subtle ">
                                 <img src="./images/fruite-item-1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title fs-3  text-center">Grapes</h5>
@@ -126,7 +141,7 @@
                         </div>
                         <!-- 2 -->
                         <div class="col">
-                            <div class="card">
+                            <div class="card border border-danger-subtle ">
                                 <img src="./images/fruite-item-2.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title fs-3  text-center">Raspberries</h5>
@@ -144,7 +159,7 @@
                         </div>
                         <!-- 3 -->
                         <div class="col">
-                            <div class="card">
+                            <div class="card border border-danger-subtle ">
                                 <img src="./images/fruite-item-3.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title fs-3  text-center">Apricots</h5>
@@ -162,7 +177,7 @@
                         </div>
                         <!-- 4 -->
                         <div class="col">
-                            <div class="card">
+                            <div class="card border border-danger-subtle ">
                                 <img src="./images/fruite-item-4.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title fs-3  text-center">Banana</h5>
@@ -180,7 +195,7 @@
                         </div>
                         <!-- 5 -->
                         <div class="col">
-                            <div class="card">
+                            <div class="card border border-danger-subtle ">
                                 <img src="./images/fruite-item-5.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title fs-3  text-center">Oranges</h5>
@@ -198,7 +213,7 @@
                         </div>
                         <!-- 6 -->
                         <div class="col">
-                            <div class="card">
+                            <div class="card border border-danger-subtle ">
                                 <img src="./images/fruite-item-1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title fs-3  text-center">Grapes</h5>
@@ -216,8 +231,8 @@
                         </div>
                         <!-- 7-->
                         <div class="col">
-                            <div class="card">
-                                <img src="./images/vegetable-item-5.jpg" class="card-img-top" alt="...">
+                            <div class="card border border-danger-subtle ">
+                                <img src="./images/vegetable-item-5.jpg" class="card-img-top img-fluid w-100" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title fs-3  text-center">Potato</h5>
                                     <p class="card-text text-center">This is a longer card with supporting text below as
@@ -234,8 +249,8 @@
                         </div>
                         <!-- 8 -->
                         <div class="col">
-                            <div class="card">
-                                <img src="./images/vegetable-item-6.jpg" class="card-img-top" alt="...">
+                            <div class="card border border-danger-subtle ">
+                                <img src="./images/vegetable-item-6.jpg" class="card-img-top img-fluid w-100" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title fs-3  text-center">Parsley</h5>
                                     <p class="card-text text-center">This is a longer card with supporting text below as
@@ -252,8 +267,8 @@
                         </div>
                         <!-- 9-->
                         <div class="col">
-                            <div class="card">
-                                <img src="./images/vegetable-item-1.jpg" class="card-img-top" alt="...">
+                            <div class="card border border-danger-subtle">
+                                <img src="./images/vegetable-item-1.jpg" class="card-img-top img-fluid w-100" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title fs-3  text-center">Tomato
                                     </h5>
@@ -273,7 +288,7 @@
                 </div>
             </div>
         </div>
-        <div id="cartSidebar" class="position-fixed top-0 end-0 bg-light shadow p-3">
+        <!-- <div id="cartSidebar" class="position-fixed top-0 end-0 bg-light shadow p-3">
             <h5 class="text-center"><i class="bi bi-cart4"></i> Your Cart</h5>
             <button id="closeCart" class="btn btn-sm  position-absolute top-0 end-0 m-2"> <i
                     class="bi bi-x fs-4 fw-bold"></i></button>
@@ -287,7 +302,7 @@
                 </thead>
                 <tbody id="cartTable"></tbody>
             </table>
-        </div>
+        </div> -->
 
     </div>
 

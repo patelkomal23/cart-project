@@ -1,35 +1,64 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 /* body{
     background-image: url("../images/bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 } */
-.navbar{
+.navbar {
     background-color: white;
 }
+
 .navbar-brand {
     font-size: 3rem !important;
     color: rgb(129, 196, 8) !important;
 }
-.add-card{
+
+.homee {
     color: rgb(129, 196, 8) !important;
 
 }
 
-.add-card:hover{
+.clr {
+    color: rgba(0, 0, 0, .55) !important;
+
+}
+
+.clr:hover {
+    color: rgb(129, 196, 8) !important;
+}
+
+.add-card {
+    color: rgb(129, 196, 8) !important;
+
+}
+
+.add-card:hover {
     color: white !important;
 }
-.cartSidebar{
-    width: 300px;
-    height: 100vh;
-}
-.home{
+
+.home {
     background: url(../images/hero-img.jpg), rgba(0, 0, 0, 0.7);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card img {
+    transition: transform 0.4s ease-in-out;
+}
+.card:hover{
+    box-shadow: 0 0 5px grey;
+}
+
+.card:hover img {
+    transform: scale(1.1);
 }
