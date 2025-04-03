@@ -3,12 +3,15 @@
     padding: 0;
 }
 
-/* body{
-    background-image: url("../images/bg.png");
-    background-position: center;
+.home {
+    background: url(../images/hero-img.jpg), rgba(0, 0, 0, 0.7);
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
-} */
+    background-size: cover;
+}
+
+
+/* Header */
 .navbar {
     background-color: white;
 }
@@ -16,11 +19,6 @@
 .navbar-brand {
     font-size: 3rem !important;
     color: rgb(129, 196, 8) !important;
-}
-
-.homee {
-    color: rgb(129, 196, 8) !important;
-
 }
 
 .clr {
@@ -32,6 +30,28 @@
     color: rgb(129, 196, 8) !important;
 }
 
+/* home */
+.homee {
+
+    color: rgb(129, 196, 8) !important;
+
+}
+
+/* Products */
+.prd{
+    color: #45595b !important;
+    text-decoration: none !important;
+
+}
+.prd:hover{
+    background-color: #ffb524 !important;
+    color: white !important;
+
+
+}
+/* Add to cart */
+
+
 .add-card {
     color: rgb(129, 196, 8) !important;
 
@@ -39,13 +59,6 @@
 
 .add-card:hover {
     color: white !important;
-}
-
-.home {
-    background: url(../images/hero-img.jpg), rgba(0, 0, 0, 0.7);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .card {
