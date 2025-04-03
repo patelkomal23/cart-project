@@ -12,7 +12,8 @@ let displayCart = () => {
         row.innerHTML = `
             <td>${item.name}</td>
             <td>${item.quantity}</td>
-            <td><button class="btn btn-sm btn-danger" onclick="removeFromCart(${index})">❌</button></td>
+            <td><button class="btn btn-sm btn-danger" onclick="removeFromCart(${index})"><i class="bi bi-x"></i>
+            </button></td>
         `;
         cartTable.appendChild(row);
     });
@@ -28,6 +29,9 @@ let addToCart = (name, price) => {
     }
     localStorage.setItem("cart", JSON.stringify(cart));
     displayCart();
+    
+    // Slide in the cart sidebar when an item is added
+    cartSidebar.style.transform = "translateX(0)";
 };
 
 // Remove Item from Cart

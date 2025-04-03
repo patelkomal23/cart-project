@@ -41,9 +41,10 @@
                             <a href="#" class="nav-link text-dark fw-semibold fs-5"><i
                                     class="bi bi-search-heart"></i></a>
                         </li>
-                        <div id="cartIcon" class="position-fixed top-50 end-0 p-3 bg-warning rounded-circle shadow" style="cursor: pointer;">
-                            <i class="bi bi-bag-heart-fill fs-3"></i>
-                        </div>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark fw-semibold fs-5"> <i
+                                    class="bi bi-bag-heart-fill fs-5" id="cartIcon" style="color:rgb(129, 196, 8) ;"></i></a>
+                        </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link text-dark fw-semibold fs-5"><i
                                     class="bi bi-person-circle"></i></a>
@@ -54,8 +55,6 @@
             </nav>
         </div>
     </header>
-
-
 
     <!-- Add to cart -->
 
@@ -70,7 +69,8 @@
                                 <img src="./images/fruite-item-1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title fs-3  text-center">Grapes</h5>
-                                    <p class="card-text text-center">This is a longer card with supporting text below as a
+                                    <p class="card-text text-center">This is a longer card with supporting text below as
+                                        a
                                         natural lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
                                 <span class="fs-4 fw-semibold p-3 text-center">$4.99 / kg</span>
@@ -87,7 +87,8 @@
                                 <img src="./images/fruite-item-2.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title fs-3  text-center">Raspberries</h5>
-                                    <p class="card-text text-center">This is a longer card with supporting text below as a
+                                    <p class="card-text text-center">This is a longer card with supporting text below as
+                                        a
                                         natural lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
                                 <span class="fs-4 fw-semibold p-3 text-center">$4.99 / kg</span>
@@ -104,7 +105,8 @@
                                 <img src="./images/fruite-item-3.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title fs-3  text-center">Apricots</h5>
-                                    <p class="card-text text-center">This is a longer card with supporting text below as a
+                                    <p class="card-text text-center">This is a longer card with supporting text below as
+                                        a
                                         natural lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
                                 <span class="fs-4 fw-semibold p-3 text-center">$4.99 / kg</span>
@@ -115,14 +117,15 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- 4 -->
                         <div class="col">
                             <div class="card">
                                 <img src="./images/fruite-item-4.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title fs-3  text-center">Banana</h5>
-                                    <p class="card-text text-center">This is a longer card with supporting text below as a
+                                    <p class="card-text text-center">This is a longer card with supporting text below as
+                                        a
                                         natural lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
                                 <span class="fs-4 fw-semibold p-3 text-center">$4.99 / kg</span>
@@ -135,10 +138,11 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
-        <div id="cartSidebar" class="position-fixed top-0 end-0 bg-light shadow p-3" style="width: 300px; height: 100vh; transform: translateX(100%); transition: 0.3s;">
+        <div id="cartSidebar" class="position-fixed top-0 end-0 bg-light shadow p-3"
+            style="width: 300px; height: 100vh; transform: translateX(100%); transition: 0.3s;">
             <h5 class="text-center">🛒 Your Cart</h5>
             <button id="closeCart" class="btn btn-sm btn-danger position-absolute top-0 end-0 m-2">✖</button>
             <table class="table table-bordered mt-3">
@@ -152,7 +156,7 @@
                 <tbody id="cartTable"></tbody>
             </table>
         </div>
-        
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
