@@ -75,3 +75,29 @@
 .card:hover img {
     transform: scale(1.1);
 }
+
+
+
+/*** Footer Start ***/
+.bg-dark{
+        background-color: #45595b !important; 
+
+}
+.footer .footer-item .btn-link {
+    line-height: 35px;
+    color: rgba(255, 255, 255, .5) !important;
+    transition: 0.5s;
+}
+
+.footer .footer-item .btn-link:hover {
+    color: #81c408 !important;
+}
+
+.footer .footer-item p.mb-4 {
+    line-height: 35px;
+}
+.footer a{
+    text-decoration: none;
+}
+/*** Footer End ***/
+
