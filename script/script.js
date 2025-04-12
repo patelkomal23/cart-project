@@ -1,6 +1,5 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-// Simple add to cart
 document.querySelectorAll(".add-card").forEach(btn => {
     btn.addEventListener("click", () => {
         const card = btn.closest(".card");
@@ -17,11 +16,11 @@ document.querySelectorAll(".add-card").forEach(btn => {
         }
 
         localStorage.setItem("cart", JSON.stringify(cart));
-        showCart(); // Update the cart display
+        showCart(); 
     });
 });
 
-// Show cart in table
+
 function showCart() {
     const cartTable = document.getElementById("cartTable");
     cartTable.innerHTML = "";
@@ -38,12 +37,10 @@ function showCart() {
     });
 }
 
-// Remove item
 function removeItem(index) {
     cart.splice(index, 1);
     localStorage.setItem("cart", JSON.stringify(cart));
     showCart();
 }
 
-// Show cart on page load
 showCart();
